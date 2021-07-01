@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestPaypalIntegration</string>
+    <string name="braintree_sandbox_apikey">your brainstree sandbox key</string>
+</resources>
