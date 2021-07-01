@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server_link">https://paypal-braintree-integrate.herokuapp.com/startTransaction.php</string>
+    <string name="payment_method_nonce">payment_method_nonce</string>
+    <string name="device_data">device_data</string>
+    <string name="amount">amount</string>
+    <string name="order_id">order_id</string>
+    <string name="transaction_tag">PayPalTransaction</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/amountLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textSize="20sp"
+            android:gravity="end"
+            android:layout_weight="0.1"
+            />
+
+        <EditText
+            android:hint="Enter Billing Amount"
+            android:id="@+id/amountEt"
+            android:inputType="number|numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.9"/>
+
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_marginLeft="10dp"
+        android:id="@+id/simulateDeclineCheckBox"
+        android:layout_below="@+id/amountLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_centerHorizontal="true"
+        android:text="Simulate Transaction Decline"/>
+
+
+    <Button
+        android:id="@+id/payPalCheckoutButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/simulateDeclineCheckBox"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/paypal_button"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="Confirming the transaction with Paypal. Please wait ..."
+        android:id="@+id/progressText"
+        android:layout_below="@+id/progressBar"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+
+        />
+
+
+</RelativeLayout>
